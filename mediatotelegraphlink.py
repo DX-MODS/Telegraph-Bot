@@ -3,14 +3,14 @@ from pyrogram.types import Message
 from telegraph import upload_file
 import os
 
-ZIYAN-SER=Client(
+ZIYANSER=Client(
     "MediaToTelegraphLink",
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"],
     bot_token = os.environ["BOT_TOKEN"]
 )
 
-@ZIYAN-SER.on_message(filters.command('start') & filters.private)
+@ZIYANSER.on_message(filters.command('start') & filters.private)
 async def start(client, message):
     text = f"""
 Heya {message.from_user.mention},
@@ -21,12 +21,12 @@ Valid file types are 'jpeg', 'jpg', 'png', 'mp4' and 'gif'.
 
 To generate links in **group chats**, add me to your supergroup and send the command <code>/tl</code> as a reply to a valid media file.
 
-🏠 | [Home](https://t.me/ZIYAN-SERofficialchannel)
+🏠 | [Home](https://t.me/ZIYANSERofficialchannel)
             """
-    await ZIYAN-SER.send_message(message.chat.id, text, disable_web_page_preview=True)
+    await ZIYANSER.send_message(message.chat.id, text, disable_web_page_preview=True)
     
 
-@ZIYAN-SER.on_message(filters.media & filters.private)
+@ZIYANSER.on_message(filters.media & filters.private)
 async def get_link_private(client, message):
     try:
         text = await message.reply("Processing...")
@@ -46,7 +46,7 @@ async def get_link_private(client, message):
     except Exception:
         pass        
 
-@ZIYAN-SER.on_message(filters.command('tl'))
+@ZIYANSER.on_message(filters.command('tl'))
 async def get_link_group(client, message):
     try:
         text = await message.reply("Processing...")
@@ -67,6 +67,6 @@ async def get_link_group(client, message):
         pass                                           
 
 print("Bot is alive!")
-ZIYAN-SER.run()
+ZIYANSER.run()
 
 #Copyright ©️ 2022 TeLe TiPs. All Rights Reserved
