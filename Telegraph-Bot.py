@@ -7,14 +7,14 @@ from pyrogram.types import Message
 from telegraph import upload_file
 import os
 
-teletips=Client(
+ziyanserbot=Client(
     "Telegraph-Bot",
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"],
     bot_token = os.environ["BOT_TOKEN"]
 )
 
-@teletips.on_message(filters.command('start') & filters.private)
+@ziyanserbot.on_message(filters.command('start') & filters.private)
 async def start(client, message):
     text = f"""
 Heya {message.from_user.mention},
@@ -27,10 +27,10 @@ To generate links in **group chats**, add me to your supergroup and send the com
 
 🏠 | [Home](https://t.me/teletipsofficialchannel)
             """
-    await teletips.send_message(message.chat.id, text, disable_web_page_preview=True)
+    await ziyanserbot.send_message(message.chat.id, text, disable_web_page_preview=True)
     
 
-@teletips.on_message(filters.media & filters.private)
+@ziyanserbot.on_message(filters.media & filters.private)
 async def get_link_private(client, message):
     try:
         text = await message.reply("Processing...")
@@ -50,7 +50,7 @@ async def get_link_private(client, message):
     except Exception:
         pass        
 
-@teletips.on_message(filters.command('tl'))
+@ziyanserbot.on_message(filters.command('tl'))
 async def get_link_group(client, message):
     try:
         text = await message.reply("Processing...")
@@ -71,6 +71,6 @@ async def get_link_group(client, message):
         pass                                           
 
 print("Bot is alive!")
-teletips.run()
+ziyanserbot.run()
 
 #Copyright ©️ 2022 TeLe TiPs. All Rights Reserved
