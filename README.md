@@ -1,4 +1,4 @@
-<h1 align= center>MediaToTelegraphLink-TeLeTiPs</h1>
+<h1 align= center>Telegraph-Bot</h1>
 <h3 align = center>Powerful Telegram bot to generate Telegraph links for your media files. This bot can work also in group chats.</h3>
 <p align="center">
 <a href="https://python.org"><img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python"></a>
@@ -16,7 +16,7 @@
 
 ### Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/teletips/MediaToTelegraphLink-TeLeTiPs)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ZIYAN-SER/Telegraph-Bot)
 
 ## Config Vars
 1. `API_ID` : Telegram API_ID, get it from my.telegram.org/apps
