@@ -21,7 +21,7 @@ Valid file types are 'jpeg', 'jpg', 'png', 'mp4' and 'gif'.
 
 To generate links in **group chats**, add me to your supergroup and send the command <code>/tl</code> as a reply to a valid media file.
 
-🏠 | [Home](https://t.me/ZIYANSERofficialchannel)
+🏠 | [Home](https://t.me/suport_ziyans)
             """
     await ZIYANSER.send_message(message.chat.id, text, disable_web_page_preview=True)
     
@@ -67,6 +67,5 @@ async def get_link_group(client, message):
         pass                                           
 
 print("Bot is alive!")
-ZIYANSER.run()
-
-#Copyright ©️ 2022 TeLe TiPs. All Rights Reserved
+ZIYANSER.run
+##©2022 ZIYAN❣️
