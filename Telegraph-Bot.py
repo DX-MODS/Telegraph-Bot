@@ -1,6 +1,5 @@
-#Copyright ©️ 2022 TeLe TiPs. All Rights Reserved
-#You are free to use this code in any of your project, but you MUST include the following in your README.md (Copy & paste)
-# ##Credits - [MediaToTelegraphLink bot by TeLe TiPs] (https://github.com/teletips/MediaToTelegraphLink-TeLeTiPs)
+#©2022 ZIYAN-SER
+#A PROJECT DONE BY ZIYAN
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
@@ -25,7 +24,7 @@ Valid file types are 'jpeg', 'jpg', 'png', 'mp4' and 'gif'.
 
 To generate links in **group chats**, add me to your supergroup and send the command <code>/tl</code> as a reply to a valid media file.
 
-🏠 | [Home](https://t.me/teletipsofficialchannel)
+🏠 | [Home](https://t.me/suport_ziyans)
             """
     await ziyanserbot.send_message(message.chat.id, text, disable_web_page_preview=True)
     
@@ -72,5 +71,3 @@ async def get_link_group(client, message):
 
 print("Bot is alive!")
 ziyanserbot.run()
-
-#Copyright ©️ 2022 TeLe TiPs. All Rights Reserved
