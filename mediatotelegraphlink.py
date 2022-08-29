@@ -1,16 +1,20 @@
+#Copyright ©️ 2022 TeLe TiPs. All Rights Reserved
+#You are free to use this code in any of your project, but you MUST include the following in your README.md (Copy & paste)
+# ##Credits - [MediaToTelegraphLink bot by TeLe TiPs] (https://github.com/teletips/MediaToTelegraphLink-TeLeTiPs)
+
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from telegraph import upload_file
 import os
 
-ZIYANSER=Client(
+teletips=Client(
     "Telegraph-Bot",
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"],
     bot_token = os.environ["BOT_TOKEN"]
 )
 
-@ZIYANSER.on_message(filters.command('start') & filters.private)
+@teletips.on_message(filters.command('start') & filters.private)
 async def start(client, message):
     text = f"""
 Heya {message.from_user.mention},
@@ -21,12 +25,12 @@ Valid file types are 'jpeg', 'jpg', 'png', 'mp4' and 'gif'.
 
 To generate links in **group chats**, add me to your supergroup and send the command <code>/tl</code> as a reply to a valid media file.
 
-🏠 | [Home](https://t.me/suport_ziyans)
+🏠 | [Home](https://t.me/teletipsofficialchannel)
             """
-    await ZIYANSER.send_message(message.chat.id, text, disable_web_page_preview=True)
+    await teletips.send_message(message.chat.id, text, disable_web_page_preview=True)
     
 
-@ZIYANSER.on_message(filters.media & filters.private)
+@teletips.on_message(filters.media & filters.private)
 async def get_link_private(client, message):
     try:
         text = await message.reply("Processing...")
@@ -46,7 +50,7 @@ async def get_link_private(client, message):
     except Exception:
         pass        
 
-@ZIYANSER.on_message(filters.command('tl'))
+@teletips.on_message(filters.command('tl'))
 async def get_link_group(client, message):
     try:
         text = await message.reply("Processing...")
@@ -67,5 +71,6 @@ async def get_link_group(client, message):
         pass                                           
 
 print("Bot is alive!")
-ZIYANSER.run
-##©2022 ZIYAN❣️
+teletips.run()
+
+#Copyright ©️ 2022 TeLe TiPs. All Rights Reserved
