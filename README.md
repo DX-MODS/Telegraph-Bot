@@ -18,6 +18,9 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ZIYAN-SER/Telegraph-Bot)
 
+### Koyeb
+
+<a target="_blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/DX-MODS/BixbyAutoFilter&branch=master&name=bixbyfilterbot"><img alt="Deploy to Koyeb" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg"></a>
 ## Config Vars
 1. `API_ID` : Telegram API_ID, get it from my.telegram.org/apps
 2. `API_HASH` : Telegram API_ID, get it from my.telegram.org/apps
