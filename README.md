@@ -15,14 +15,10 @@
 ## Deployment Methods
 
 ### Railway
-
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/Xa6CLa?referralCode=RIPPERBOT)
 ### Heroku
-
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ZIYAN-SER/Telegraph-Bot)
-
 ### Koyeb
-
 <a target="_blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/DX-MODS/Telegraph-Bot&branch=master&name=telegraphbot"><img alt="Deploy to Koyeb" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg"></a>
 ## Config Vars
 1. `API_ID` : Telegram API_ID, get it from my.telegram.org/apps
