@@ -14,6 +14,9 @@
 
 ## Deployment Methods
 
+### Railway
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/Xa6CLa?referralCode=RIPPERBOT)
 ### Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ZIYAN-SER/Telegraph-Bot)
