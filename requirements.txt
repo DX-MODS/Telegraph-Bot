@@ -1,13 +1,3 @@
-telegraph
-pyrogram==2.0.38
+pyrogram
 tgcrypto
-yt-dlp
-python-dotenv
-requests
-asgiref
-deezer-python
-spotipy
-psutil
-youtube-dl
-aiohttp
-lyricsgenius
+telegraph
