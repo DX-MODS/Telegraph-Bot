@@ -1,1 +1,2 @@
-worker: python3 Telegraph-Bot.py
+web: python bot.py 
+worker: python bot.py
