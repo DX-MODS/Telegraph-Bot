@@ -48,6 +48,6 @@ async def getmedia(bot, update):
     )
     await message.edit_text(
         text=text,
-        disable_web_page_preview=True,
+        disable_web_page_preview=False,
         reply_markup=reply_markup
     )
