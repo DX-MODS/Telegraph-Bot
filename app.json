@@ -1,9 +1,9 @@
 {
-    "name": "BIXBY-RENAME-BOT",
-    "description": "Telegram File Rename Bot",
-    "logo": "https://graph.org/file/91ab4b346dddd0652958c.jpg",
-    "keywords": ["Renamer Bot", "TelegramBot"],    
-    "repository": "https://github.com/DX-MODS/BIXBY-RENAME-BOT",
+    "name": "Telegraph-Bot",
+    "description": "Telegram Telegraph bot to upload images",
+    "logo": "htsjsns",
+    "keywords": ["Telegraph", "TelegramBot"],    
+    "repository": "https://github.com/DX-MODS/Telegraph-Bot",
     "env": {
         "API_ID": {
             "description": "Your APP ID From my.telegram.org ",
@@ -43,7 +43,7 @@
             "required": false
         },
         "START_PIC": {
-            "description": "Your Bot start cmd Pic from @MT_TelegraPH_Bot",
+            "description": "Your Bot start cmd Pic from @DxTelegraphBot",
             "value": "",
             "required": false
         }
