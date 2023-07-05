@@ -32,20 +32,19 @@ class Config(object):
 class Txt(object):
     # part of text configuration
     START_TXT = """<b>Hᴀɪ {} 👋,
-Tʜɪs Is Aɴ Aᴅᴠᴀɴᴄᴇᴅ Aɴᴅ Yᴇᴛ Pᴏᴡᴇʀꜰᴜʟ Rᴇɴᴀᴍᴇ Bᴏᴛ
-Usɪɴɢ Tʜɪs Bᴏᴛ Yᴏᴜ Cᴀɴ Rᴇɴᴀᴍᴇ & Cʜᴀɴɢᴇ Tʜᴜᴍʙɴᴀɪʟ Oꜰ Yᴏᴜʀ Fɪʟᴇ
-Yᴏᴜ Cᴀɴ Aʟsᴏ Cᴏɴᴠᴇʀᴛ Vɪᴅᴇᴏ Tᴏ Fɪʟᴇ & Fɪʟᴇ Tᴏ Vɪᴅᴇᴏ
-Tʜɪs Bᴏᴛ Aʟꜱᴏ Sᴜᴘᴘᴏʀᴛs Cᴜsᴛᴏᴍ Tʜᴜᴍʙɴᴀɪʟ Aɴᴅ Cᴜsᴛᴏᴍ Cᴀᴘᴛɪᴏɴ
-Tʜɪs Bᴏᴛ Wᴀs Cʀᴇᴀᴛᴇᴅ Bʏ : @dxziyan 💞</b>"""
+𝚃𝚑𝚒𝚜 𝚒𝚜 𝚊 𝚜𝚒𝚖𝚙𝚕𝚎 𝚝𝚎𝚕𝚎𝚐𝚛𝚊𝚙𝚑 𝚗𝚘𝚝 𝚝𝚘 𝚞𝚙𝚕𝚘𝚊𝚍 𝚒𝚖𝚊𝚐𝚎 𝚊𝚗𝚍 𝚐𝚒𝚏 𝚊𝚗𝚍 𝚟𝚒𝚍𝚎𝚘𝚜 𝚞𝚗𝚍𝚎𝚛 𝟻𝙼𝙱
+𝚃𝚑𝚒𝚜 𝙱𝚘𝚝 𝚒𝚜 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚍 𝙱𝚢 𝚉𝚒𝚢𝚊𝚗
+
+@𝚍𝚡𝚣𝚒𝚢𝚊𝚗💞</b>"""
 
     ABOUT_TXT = """<b>╭───────────⍟
 ├🤖 ᴍy ɴᴀᴍᴇ : {}
-├🖥️ Dᴇᴠᴇʟᴏᴩᴇʀꜱ : <a href=https://t.me/PYRO_BOTZ>𝙳𝚇 𝙼𝙾𝙳𝚂</a> 
+├🖥️ Dᴇᴠᴇʟᴏᴩᴇʀꜱ : <a href=https://t.me/dxziyan>𝙳𝚇 𝙼𝙾𝙳𝚂</a> 
 ├👨‍💻 Pʀᴏɢʀᴀᴍᴇʀ : <a href=https://github.com/DX-MODS>𝚉𝙸𝚈𝙰𝙽</a>
 ├📕 Lɪʙʀᴀʀy : <a href=https://github.com/pyrogram>𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼</a>
 ├✏️ Lᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org>Pyᴛʜᴏɴ 3</a>
 ├💾 Dᴀᴛᴀ Bᴀꜱᴇ: <a href=https://cloud.mongodb.com>Mᴏɴɢᴏ DB</a>
-├📊 Bᴜɪʟᴅ Vᴇʀꜱɪᴏɴ: <a href=https://github.com/DX-MODS/BIXBY-RENAME-BOT>BIXBY</a></b>     
+├📊 BOT Vᴇʀꜱɪᴏɴ: <a href=https://github.com/DX-MODS/Telegraph-Bot>TELEGRAPH</a></b>     
 ╰───────────────⍟ """
 
     HELP_TXT = """
