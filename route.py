@@ -1,7 +1,8 @@
 from aiohttp import web
-import time
 routes = web.RouteTableDef()
-
+import time
+StartTime = time.time()
+__version__ = 1.1
 @routes.get("/", allow_head=True)
 async def root_route_handler(_):
     return web.json_response(
