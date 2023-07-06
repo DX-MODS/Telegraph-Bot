@@ -1,8 +1,8 @@
 import asyncio
 import logging
-from ..vars import Var
+from config import Config
 from pyrogram import Client
-from DxTelegraph.utils.config_parser import TokenParser
+from helper.utils.config_parser import TokenParser
 from . import multi_clients, work_loads, DxStreamBot
 
 
