@@ -24,7 +24,13 @@
 1. `API_ID` : Telegram API_ID, get it from my.telegram.org/apps
 2. `API_HASH` : Telegram API_ID, get it from my.telegram.org/apps
 3. `BOT_TOKEN` : A Valid Telegram Bot Token, get it from @Botfather
-
+4. `ADMIN` : A Valid Admin id, get it from @Bot
+5. `WEBHOOK` : If you are deploying as web True or else False
+6. `FORCE_SUB` : Your force sub channel user name without [@]
+7. `LOG_CHANNEL` : Bot Log Sending Channel (just create a private channel and add bot to admin and take channel id to add this variable) ⚠️ id startswith -100 must
+8. `DB_URL` : Your Mongo DB URL Obtained From mongodb.com
+9. `DB_NAME` : Your Mongo DB Database Name default it will be Cluster0
+10. `START_PIC` : Your Bot start cmd Pic from @DxTelegraphBot
 ## Commands
 
   `/tl`
