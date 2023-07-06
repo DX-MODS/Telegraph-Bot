@@ -41,4 +41,4 @@ from route import web_server
         print("Bᴏᴛ Sᴛᴏᴩᴩᴇᴅ.. Byᴇ")
        
 
-Bot().run()
+DxTelegrapBot().run()
