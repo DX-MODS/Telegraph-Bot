@@ -1,5 +1,7 @@
 from aiohttp import web
 from helper.utils import get_readable_time
+import pyrogram
+from pyrogram import Client as DxTelegraph
 routes = web.RouteTableDef()
 import time
 StartTime = time.time()
@@ -10,7 +12,7 @@ async def root_route_handler(_):
         {
             "server_status": "running",
             "uptime": get_readable_time(time.time() - StartTime),
-            "telegram_bot": "@" + DxStreamBot.username,
+            "telegram_bot": "@" + DxTelegraph.username,
             "connected_bots": len(multi_clients),
             "loads": dict(
                 ("bot" + str(c + 1), l)
