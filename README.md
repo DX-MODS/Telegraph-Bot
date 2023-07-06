@@ -10,7 +10,13 @@
     <img src="https://img.shields.io/github/repo-size/DX-MODS/Telegraph-Bot?style=for-the-badge&color=yellow" alt="Repository Size">
     <img src="https://img.shields.io/github/contributors/DX-MODS/Telegraph-Bot?style=for-the-badge&color=green" alt="Contributors">
     <img src="https://img.shields.io/github/issues/DX-MODS/Telegraph-Bot?style=for-the-badge&color=yellow" alt="Issues">
-</p>  
+</p>
+
+## Demo Bot (Official Telegraph Bot)
+
+<p align="center">
+🤖 <a href="https://t.me/DX_telegraphbot"><img title="Telegraph" src="https://img.shields.io/static/v1?label=TELEGRAPH&message=BOT&color=blue-green"></a> 🤖
+</p>
 
 ## Deployment Methods
 
