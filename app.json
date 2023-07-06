@@ -1,7 +1,7 @@
 {
     "name": "Telegraph-Bot",
     "description": "Telegram Telegraph bot to upload images",
-    "logo": "htsjsns",
+    "logo": "https://telegra.ph/file/277608b2e7862d3d8c936.jpg",
     "keywords": ["Telegraph", "TelegramBot"],    
     "repository": "https://github.com/DX-MODS/Telegraph-Bot",
     "env": {
