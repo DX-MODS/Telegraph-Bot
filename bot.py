@@ -3,7 +3,6 @@
 #you may not use this file except in compliance with the License.
 #Author ZIYAN
 from datetime import datetime
-from helper.client import DxTelegraphBot
 from pytz import timezone
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
@@ -11,6 +10,18 @@ from config import Config
 from aiohttp import web
 from route import web_server
 
+class Bot(Client):
+
+    def __init__(self):
+        super().__init__(
+            name="Telegraph-Bot",
+            api_id=Config.API_ID,
+            api_hash=Config.API_HASH,
+            bot_token=Config.BOT_TOKEN,
+            workers=200,
+            plugins={"root": "plugins"},
+            sleep_threshold=15,
+        )
 
     async def start(self):
         await super().start()
@@ -41,4 +52,4 @@ from route import web_server
         print("Bᴏᴛ Sᴛᴏᴩᴩᴇᴅ.. Byᴇ")
        
 
-DxTelegrapBot.run()
+Bot().run()
