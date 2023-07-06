@@ -3,7 +3,7 @@ import pyromod.listen
 from config import Config
 from os import getcwd
 
-DxStreamBot = Client(
+DxTelegraphBot = Client(
     name='DxTelegraph',
     api_id=Config.API_ID,
     api_hash=Config.API_HASH,
