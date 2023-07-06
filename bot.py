@@ -10,17 +10,6 @@ from config import Config
 from aiohttp import web
 from route import web_server
 
-DxStreamBot = Client(
-    name='DxTelegraphBot',
-    api_id=Config.API_ID,
-    api_hash=Config.API_HASH,
-    bot_token=Config.BOT_TOKEN,
-    sleep_threshold=Config.SLEEP_THRESHOLD,
-    workers=Config.WORKERS
-)
-
-multi_clients = {}
-work_loads = {}
 
     async def start(self):
         await super().start()
