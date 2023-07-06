@@ -3,6 +3,7 @@
 #you may not use this file except in compliance with the License.
 #Author ZIYAN
 from datetime import datetime
+from helper.client import DxTelegraphBot
 from pytz import timezone
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
