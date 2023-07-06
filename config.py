@@ -14,7 +14,7 @@ class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","Dxbotz")     
+    DB_NAME = os.environ.get("DB_NAME","pyro-botz")     
     DB_URL  = os.environ.get("DB_URL","")
  
     # other configs
@@ -26,9 +26,9 @@ class Config(object):
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
-    PORT = os.environ.get("PORT", "8080")
-    WORKERS = int(os.environ.get("WORKERS", '4'))
-    SLEEP_THRESHOLD = int(os.environ.get("SLEEP_THRESHOLD", "60"))
+    PORT = environ.get("PORT", "8080")
+
+
 class Txt(object):
     # part of text configuration
     START_TXT = """<b>Hᴀɪ {} 👋,
