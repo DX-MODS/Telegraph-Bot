@@ -27,7 +27,7 @@ class Config(object):
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
     PORT = int(os.environ.get("PORT", "8080"))
-    MULTI_CLIENT = bool(os.environ.get("MULTI_CLIENT" False))
+    MULTI_CLIENT = bool(os.environ.get("MULTI_CLIENT", False))
     SLEEP_THRESHOLD = int(os.environ.get("SLEEP_THRESHOLD", "60"))
     WORKERS = int(os.environ.get("WORKERS", "4"))
     
