@@ -3,7 +3,7 @@ import logging
 from config import Config
 from pyrogram import Client
 from helper.utils.config_parser import TokenParser
-from . import multi_clients, work_loads, DxTelegraphBot
+from helper.client import multi_clients, work_loads, DxTelegraphBot
 
 
 async def initialize_clients():
