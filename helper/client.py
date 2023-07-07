@@ -9,7 +9,7 @@ DxTelegraphBot = Client(
     api_hash=Config.API_HASH,
     bot_token=Config.BOT_TOKEN,
     sleep_threshold=Config.SLEEP_THRESHOLD,
-    workers=Var.WORKERS
+    workers=Config.WORKERS
 )
 
 multi_clients = {}
