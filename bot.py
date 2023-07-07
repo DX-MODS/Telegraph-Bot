@@ -10,7 +10,7 @@ from config import Config
 from aiohttp import web
 from route import web_server
 from helper.utils.keepalive import ping_server
-
+import asyncio
 class Bot(Client):
 
     def __init__(self):
