@@ -9,7 +9,7 @@ from pyrogram.raw.all import layer
 from config import Config
 from aiohttp import web
 from route import web_server
-from helper.utils.keepalive import ping_server
+from helper.keepalive import ping_server
 import asyncio
 class Bot(Client):
 
