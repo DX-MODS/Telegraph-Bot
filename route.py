@@ -1,5 +1,5 @@
 from aiohttp import web
-
+from helper.client import multi_clients, work_loads, DxTelegraphBot
 routes = web.RouteTableDef()
 
 @routes.get("/", allow_head=True)
@@ -8,7 +8,7 @@ async def root_route_handler(_):
         {
             "server_status": "running",
             "uptime": get_readable_time(time.time() - StartTime),
-            "telegram_bot": "@" + DxStreamBot.username,
+            "telegram_bot": "@" + DxTelegraphBot.username,
             "connected_bots": len(multi_clients),
             "loads": dict(
                 ("bot" + str(c + 1), l)
