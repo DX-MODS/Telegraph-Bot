@@ -9,6 +9,7 @@ from pyrogram.raw.all import layer
 from config import Config
 from aiohttp import web
 from route import web_server
+from helper.utils.keepalive import ping_server
 
 class Bot(Client):
 
@@ -30,6 +31,7 @@ class Bot(Client):
         self.username = me.username  
         self.uptime = Config.BOT_UPTIME     
         if Config.WEBHOOK:
+            asyncio.create_task(ping_server())
             app = web.AppRunner(await web_server())
             await app.setup()
             bind_address = "0.0.0.0"
