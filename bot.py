@@ -11,7 +11,14 @@ from aiohttp import web
 from route import web_server
 from helper.keepalive import ping_server
 import asyncio
+import logging
+import logging.config
 
+# Get logging configurations
+logging.config.fileConfig('logging.conf')
+logging.getLogger().setLevel(logging.ERROR)
+logging.getLogger("pyrogram").setLevel(logging.WARNING)
+logger = logging.getLogger(__name__)
 
 class Bot(Client):
 
