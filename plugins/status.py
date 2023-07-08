@@ -1,6 +1,6 @@
 from pyrogram import Client as DxTelegraphBot, filters
 import time
-@DxTelegraphBot.on_message(filters.private & filters.regex("status📊"))
+@DxTelegraphBot.on_message(filters.private & filters.regex("status"))
 async def stats(bot, update):
   currentTime = readable_time((time.time() - StartTime))
   total, used, free = shutil.disk_usage('.')
