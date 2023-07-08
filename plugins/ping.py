@@ -1,7 +1,7 @@
 from pyrogram import Client as DxMods,filters
 import time
 
-@DxMods.on_message(filters.regex("ping📡"))
+@DxMods.on_message(filters.regex("ping"))
 async def ping(b, m):
     start_t = time.time()
     ag = await m.reply_text("....")
