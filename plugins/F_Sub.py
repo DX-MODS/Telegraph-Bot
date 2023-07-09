@@ -7,7 +7,7 @@ from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import UserNotParticipant
 from config import Config
-from helper.database import db
+from helper.database import not_subscribed
 
 
 @Client.on_message(filters.private & filters.create(not_subscribed))
