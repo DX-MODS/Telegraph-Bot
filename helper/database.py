@@ -6,7 +6,7 @@
 import motor.motor_asyncio
 from config import Config
 from .utils import send_log
-
+from config import Config
 class Database:
 
     def __init__(self, uri, database_name):
@@ -43,6 +43,20 @@ class Database:
     async def delete_user(self, user_id):
         await self.col.delete_many({'_id': int(user_id)})    
 
+    async def not_subscribed(_, client, message):
+    await db.add_user(client, message)
+    if not Config.FORCE_SUB:
+        return False
+    try:             
+        user = await client.get_chat_member(Config.FORCE_SUB, message.from_user.id) 
+        if user.status == enums.ChatMemberStatus.BANNED:
+            return True 
+        else:
+            return False                
+    except UserNotParticipant:
+        pass
+    return True
+    
 db = Database(Config.DB_URL, Config.DB_NAME)
 
 
