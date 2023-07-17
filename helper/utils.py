@@ -5,7 +5,7 @@
 import math, time
 from datetime import datetime
 from pytz import timezone
-from config import Config, Txt 
+from config import Config 
 
 def humanbytes(size):    
     if not size:
