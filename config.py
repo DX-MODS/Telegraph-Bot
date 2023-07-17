@@ -21,7 +21,7 @@ class Config(object):
     BOT_UPTIME  = time.time()
     #start pic url this image will shown in start command get this from @DX_telegraphbot
     START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
     #the channel which need to force subscribed, channel username without @
     FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
     #the log channel id must start in -100 this channel will be were the bot send logs
