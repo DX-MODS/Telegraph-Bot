@@ -46,6 +46,11 @@
             "description": "Your Bot start cmd Pic from @DxTelegraphBot",
             "value": "",
             "required": false
+        },
+        "PING_WEB": {
+            "description": "the web link were your bot is deployed",
+            "value": "",
+            "required": false
         }
     },
     "buildpacks": [
