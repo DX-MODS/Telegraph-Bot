@@ -29,3 +29,5 @@ services:
         sync: false
       - key: WEBHOOK
         sync: false
+      - key: PING_WEB
+        sync: false
