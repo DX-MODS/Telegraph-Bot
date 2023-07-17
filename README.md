@@ -37,20 +37,10 @@
 8. `DB_URL` : Your Mongo DB URL Obtained From mongodb.com
 9. `DB_NAME` : Your Mongo DB Database Name default it will be Cluster0
 10. `START_PIC` : Your Bot start cmd Pic from @DxTelegraphBot
-## Commands
 
-  `/tl`
-
-- For group chats.
-```
-Simply send a valid media file directly to bot's private chat.
-Valid file types are 'jpeg', 'jpg', 'png', 'mp4' and 'gif'.
-
-To generate links in group chats, add this bot to your group and send the command /tl as a reply to a valid media file.
-```
 ## Credits
 - [Telegraph-Bot](https://github.com/DX-MODS)
-- [Pyrogram](https://github.com/pyrogram/pyrogram)
+- [Thanks to Dan for pyrogram](https://github.com/pyrogram/pyrogram)
 
 ## Warning
 
