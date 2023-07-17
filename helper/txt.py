@@ -3,7 +3,7 @@
 #you may not use this file except in compliance with the License.
 #Author ZIYAN"
 
-class mr(object):
+class Txt(object):
     
 
     ABOUT_TXT = """
