@@ -26,6 +26,10 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/DX-MODS/Telegraph-Bot&template=https://github.com/DX-MODS/Telegraph-Bot.git)
 ### Koyeb
 <a target="_blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/DX-MODS/Telegraph-Bot&branch=master&name=telegraphbot"><img alt="Deploy to Koyeb" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg"></a>
+
+### Donate
+<a href="https://www.buymeacoffee.com/ziyankp" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 200px !important;" ></a>
+
 ## Config Vars
 1. `API_ID` : Telegram API_ID, get it from my.telegram.org/apps
 2. `API_HASH` : Telegram API_ID, get it from my.telegram.org/apps
