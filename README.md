@@ -21,7 +21,7 @@
 ## Deployment Methods
 
 ### Railway
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/Xa6CLa?referralCode=RIPPERBOT)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/SqF3p7?referralCode=dxmods)
 ### Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/DX-MODS/Telegraph-Bot&template=https://github.com/DX-MODS/Telegraph-Bot.git)
 ### Koyeb
