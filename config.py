@@ -5,7 +5,8 @@
 #if you use our codes try to donate here https://www.buymeacoffee.com/ziyankp
 
 import re, os, time
-
+from dotenv import load_dotenv
+load_dotenv("config.env")
 id_pattern = re.compile(r'^.\d+$') 
 
 class Config(object):
