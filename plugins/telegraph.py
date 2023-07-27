@@ -7,11 +7,38 @@
 import os
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from telegraph import upload_file
+from telegraph import upload_file, Telegraph
 
 DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
 
-            
+@Client.on_message(filters.text & filters.incoming)
+async def text_handler(c, m):
+    """Creating instant view link
+       by creating post in telegra.ph 
+       and sending photo link to user"""
+
+    try:
+        short_name = "Dx Bots"
+        new_user = Telegraph().create_account(short_name=short_name)
+        auth_url = new_user["auth_url"]
+        title = m.from_user.first_name
+        content = m.text
+        if '|' in m.text:
+            content, title = m.text.split('|')
+        content = content.replace("\n", "<br>")
+        author_url = f'https://telegram.dog/{m.from_user.username}' if m.from_user.id else None
+
+        try:
+            response = Telegraph().create_page(
+                title=title,
+                html_content=content,
+                author_name=str(m.from_user.first_name),
+                author_url=author_url
+            )
+        except Exception as e:
+            print(e)
+        await m.reply_text("https://telegra.ph/{}".format(response["path"]))
+                
 @Client.on_message(filters.private & filters.media)
 async def getmedia(bot, update):
     medianame = DOWNLOAD_LOCATION + str(update.from_user.id)
