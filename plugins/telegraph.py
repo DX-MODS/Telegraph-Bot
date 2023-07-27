@@ -8,18 +8,9 @@ import os
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from telegraph import upload_file
-from plugins.tl import work_to_do
 
 DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
 
-@Client.on_message(filters.private & filters.text)
-async def telegraph(bot, update):
-    url, status = await work_to_do(bot)
-    if url:
-        if status == "":
-            await bot.reply(url, quote=True)
-        else:
-            await status.edit(url)
             
 @Client.on_message(filters.private & filters.media)
 async def getmedia(bot, update):
