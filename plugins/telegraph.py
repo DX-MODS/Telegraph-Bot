@@ -66,7 +66,7 @@ async def text_handler(bot, update):
        and sending photo link to user"""
 
     try:
-        short_name = "Ziyan"
+        short_name = "1337"
         new_user = Telegraph().create_account(short_name=short_name)
         auth_url = new_user["auth_url"]
         title = update.from_user.first_name
