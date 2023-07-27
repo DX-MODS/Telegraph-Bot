@@ -12,7 +12,7 @@ from plugins.tl import work_to_do
 
 DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
 
-@Client.on_message(filters.private & ~filters.text)
+@Client.on_message(filters.private & filters.text)
 async def telegraph(bot, update):
     url, status = await work_to_do(bot)
     if url:
