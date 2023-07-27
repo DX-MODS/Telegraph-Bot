@@ -11,7 +11,7 @@ from telegraph import upload_file, Telegraph
 
 DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
 
-@Client.on_message(filters.text & filters.incoming)
+@Client.on_message(filters.text & filters.private)
 async def text_handler(c, m):
     """Creating instant view link
        by creating post in telegra.ph 
@@ -39,7 +39,7 @@ async def text_handler(c, m):
             print(e)
         await m.reply_text("https://telegra.ph/{}".format(response["path"]))
                 
-@Client.on_message(filters.private & filters.media)
+@Client.on_message(filters.media & filters.private)
 async def getmedia(bot, update):
     medianame = DOWNLOAD_LOCATION + str(update.from_user.id)
     try:
