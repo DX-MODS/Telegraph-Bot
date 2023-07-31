@@ -44,11 +44,11 @@ async def getmedia(bot, update):
             reply_markup=reply_markup
         )
         return
-    text=f"**Link :-** `http://graph.org{response[0]}`\n\n**Join :-** @dxmodsupdates"
+    text=f"**Link :-** `https://graph.org{response[0]}`\n\n**Join :-** @dxmodsupdates"
     reply_markup=InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton(text="Open Link", url=f"http://graph.org{response[0]}"),
-        InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url=http://graph.org{response[0]}")
+        InlineKeyboardButton(text="Open Link", url=f"https://graph.org{response[0]}"),
+        InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url=https://graph.org{response[0]}")
         ],[
         InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/dxmodsupdates")
         ]]
@@ -85,7 +85,7 @@ async def text_handler(bot, update):
             )
         except Exception as e:
             print(e)
-        await m.reply_text("http://graph.org/{}".format(response["path"]))
+        await m.reply_text("https://graph.org/{}".format(response["path"]))
 
     except:
         pass
