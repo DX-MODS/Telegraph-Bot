@@ -7,4 +7,4 @@ from pyrogram import Client, filters
 async def get_stats(bot :Client, message: Message):
     mr = await message.reply('**𝙰𝙲𝙲𝙴𝚂𝚂𝙸𝙽𝙶 𝙳𝙴𝚃𝙰𝙸𝙻𝚂.....**')
     total_users = await db.total_users_count()
-    await mr.edit( text=f"❤️‍🔥 TOTAL USER'S = `{total_users}`")
+    await mr.edit( text=f"𝚝𝚘𝚝𝚊𝚕 𝚞𝚜𝚎𝚛𝚜 `{total_users}`")
