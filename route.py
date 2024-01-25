@@ -9,7 +9,7 @@ routes = web.RouteTableDef()
 
 @routes.get("/", allow_head=True)
 async def root_route_handler(request):
-    return web.json_response("DxMods")
+    return web.json_response("Telegraph Bot By DxMods is running")
 
 
 async def web_server():
