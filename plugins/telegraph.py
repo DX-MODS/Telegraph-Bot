@@ -44,13 +44,13 @@ async def getmedia(bot, update):
             reply_markup=reply_markup
         )
         return
-    text=f"**Link :-** `https://graph.org{response[0]}`\n\n**Join :-** @dxmodsupdates"
+    text=f"**Link :-** `https://graph.org{response[0]}`\n\n**Join :-** @dxmods_updates"
     reply_markup=InlineKeyboardMarkup(
         [[
         InlineKeyboardButton(text="Open Link", url=f"https://graph.org{response[0]}"),
         InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url=https://graph.org{response[0]}")
         ],[
-        InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/dxmodsupdates")
+        InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/dxmods_updates")
         ]]
     )
     await message.edit_text(
