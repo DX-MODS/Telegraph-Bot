@@ -1,4 +1,4 @@
-pyrogram==2.0.106
+git+https://github.com/DX-MODS/pyrogram
 TgCrypto==1.2.5 
 motor==3.2.0
 dnspython==2.4.0
