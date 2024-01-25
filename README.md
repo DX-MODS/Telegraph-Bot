@@ -15,7 +15,7 @@
 ## Demo Bot (Official Telegraph Bot)
 
 <p align="center">
-🤖 <a href="https://t.me/DX_telegraphbot"><img title="Telegraph" src="https://img.shields.io/static/v1?label=TELEGRAPH&message=BOT&color=blue-green"></a> 🤖
+🤖 <a href="https://t.me/Telegrphuplodbot"><img title="Telegraph" src="https://img.shields.io/static/v1?label=TELEGRAPH&message=BOT&color=blue-green"></a> 🤖
 </p>
 
 ## Deployment Methods
